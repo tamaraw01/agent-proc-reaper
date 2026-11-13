@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-proc-reaper"
+version = "1.0.0"
+description = "Session-scoped process tree supervisor and reaper for AI agent environments."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Agent Process Reaper Contributors" }]
+keywords = ["agent", "claude-code", "codex", "process", "supervisor", "reaper", "subagents"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.scripts]
+agent-proc-reaper = "agent_proc_reaper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
