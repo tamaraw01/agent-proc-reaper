@@ -42,7 +42,7 @@ pip install .
 Or run directly without installation:
 
 ```bash
-python3 -m agent_proc_reaper.cli --help
+PYTHONPATH=src python3 -m agent_proc_reaper.cli --help
 ```
 
 ### 1. Run a command under session tracking
